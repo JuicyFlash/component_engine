@@ -1,4 +1,9 @@
-<h1>
-  Hello Rails!
-</h1>
-<%= render(ComponentEngine::ExampleButtonComponent.new(title: "my title"))%>
+<div class="px-2 py-2">
+  <%= render(ComponentEngine::ExampleButtonComponent.new(text: "example", size: "s"))%>
+</div>
+<div class="px-2 py-2">
+  <%= render(ComponentEngine::ExampleButtonComponent.new(text: "example", size: "m"))%>
+</div>
+<div class="px-2 py-2">
+  <%= render(ComponentEngine::ExampleButtonComponent.new(text: "example", scheme: :danger, size: "l"))%>
+</div>
